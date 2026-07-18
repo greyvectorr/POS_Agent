@@ -24,7 +24,7 @@ TODO SUMMARY (details are in the docstrings and comments below):
   TODO 6: process_cashout()   -> try / except / else / finally orchestration
   TODO 7: main()              -> loop the queue, tally results, print summary
 ------------------------------------------------------------------------------
-Run it any time with:  python starter.py
+Run it any time with:  python agent.py
 Right now it runs without crashing but does not do the real work yet.
 """
 
@@ -185,7 +185,7 @@ def check_agent_float(amount, agent_float):
     # If it does, raise InsufficientFundsError with a clear message.
 
     if amount > agent_float:
-        raise InsufficientFundsError(
+        raise TransactionError(
             f"Agent amount insufficient: requested ₦{amount}, available ₦{agent_float}."
             )
     
