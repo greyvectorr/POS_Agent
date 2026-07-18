@@ -41,8 +41,8 @@ Every request either succeeds or is rejected with a specific, human-readable rea
 Clone the repository and run the script directly:
 
 ```bash
-git clone <https://github.com/greyvectorr/POS_Agent>
-cd <POS_Agent>
+git clone https://github.com/greyvectorr/POS_Agent
+cd POS_Agent
 python agent.py
 ```
 
