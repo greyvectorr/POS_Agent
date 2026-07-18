@@ -186,7 +186,7 @@ def check_agent_float(amount, agent_float):
 
     if amount > agent_float:
         raise InsufficientFundsError(
-            f"Agent float insufficient: requested ₦{amount}, available ₦{agent_float}."
+            f"Agent amount insufficient: requested ₦{amount}, available ₦{agent_float}."
             )
     
 
@@ -343,7 +343,7 @@ def main():
             failures += 1
 
         print(
-            f"Current float after transaction: ₦{agent_float}"
+            f"Current amount after transaction: ₦{agent_float}"
         )
 
     # print the end-of-day summary (Successes, Failures, Final Float(Amount))
